@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <div style="width: 85%; margin: 0 7.5%;">
+            <div style="text-align: center; padding-left: 50px;">            
+                <h3>Catalog questions</h5>
+                <div>
+                <% if (questions.length > 0) { %>
+                    <% questions.forEach((question, index) => {%>
+                       <div>Q<%= index+1 %>. <%= question.question %> </div>
+                    <%  });%>
+                <% }%>
+                    </div>
+             </div>
+        </div>
+    </body>
+</html>
